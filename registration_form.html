@@ -1,0 +1,67 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>User Registration</title>
+    <script src="validate.js"></script>
+</head>
+
+
+<body>
+    <form action="" method="GET" id="registration" style="padding-left:30%;padding-right:30%; margin-top:250px;">
+        <fieldset>
+            <legend> Please register </legend>
+            <table border=0 width="100%">
+                <tr class="fName">
+                    <td><label for="fName" class="register">First Name:</label></td>
+                    <td><input id="fName" class="name" type="text" name="fName"></td>
+                    <td><span id="err_fName"></span></td>
+                </tr>
+                
+                <tr class="lName">
+                    <td><label for="lName" class="register">Last Name:</label></td>
+                    <td><input id="lName" class="name" type="text" name="lName"></td>
+                    <td><span id="err_lName"></span></td>
+                </tr>
+                
+                <tr class="email">
+                    <td><label for="email" class="register">Enter your E-Mail:</label></td>
+                    <td><input id="email" class="email" type="text" name="email"></td>
+                    <td><span id="err_email"></span></td>
+                </tr>
+                
+                <tr class="username">
+                    <td><label for="username" class="register">Select your User Name:</label></td>
+                    <td><input id="username" class="name" type="text" name="username"></td>
+                    <td><span id="err_username"></span></td>
+                </tr>
+                
+                <tr class="password">
+                    <td><label for="password" class="register">Select your Password:</label></td>
+                    <td><input id="password" type="password" name="password"></td>
+                    <td><span id="err_password"></span></td>
+                </tr>
+                
+                <tr class="password2">
+                    <td><label for="password2" class="register">Repeat your Password:</label></td>
+                    <td><input id="password2" type="password" name="password2"></td>
+                    <td><span id="err_password2"></span></td>
+                </tr>
+
+				<tr><td></td><td>&nbsp;</td></tr>
+
+                <tr>	
+                <td></td>
+                <td>
+                    <div align="right" >
+                        <input type="hidden" value="true" name="registered">
+                        <input id="save" type="button" value="Register" onclick="validate()">
+                    </div>
+                </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
